@@ -1,0 +1,60 @@
+$fontSize: 1rem;
+
+.header {
+    position: sticky;
+    top: 0;
+    padding: 3.5rem 0;
+    background-color: #fff;
+    border-bottom: 1px solid #eeeeee;
+
+    &__contact {
+        list-style: none;
+
+        &--link {
+            padding: 15px 30px;
+            background-color: $orange;
+            border-radius: 5px;
+            transition: $animation;
+            color: #fff;
+            font-size: $fontSize;
+            text-decoration: none;
+
+            &:hover {
+                background-color: $silver;
+            }
+        }
+    }
+}
+
+.logo {
+    width: 100%;
+
+    &__img {
+        width: 100%;
+    }
+}
+
+.navbar {
+    width: 100%;
+
+    &__content {
+        width: 100%;
+        padding-left: 100px;
+    }
+
+    &__item {
+        list-style: none;
+    }
+
+    &__link {
+        padding: 2.5rem;
+        transition: $animation;
+        color: $silver;
+        font-size: $fontSize;
+        text-decoration: none;
+
+        &:hover {
+            color: $orange;
+        }
+    }
+}

@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+$orange: #ff7062;
+$silver: #757575;
+
+$animation: .2s;
+
+@font-face {
+    font-family: 'helvetica-caps-roman';
+    src: url('../../fonts/helvetica-caps-roman.ttf');
+}
+@font-face {
+    font-family: 'helvetica-roman';
+    src: url('../../fonts/helvetica-roman.ttf');
+}
+
+.h-roman{
+    font-family: 'helvetica-roman';
+}
+  
+.caps-roman{
+    font-family: 'helvetica-caps-roman';
+}
+
+.social {
+    position: fixed;
+    left: 20px;
+    bottom: 50px;
+    transform: rotate(180deg);
+    writing-mode: vertical-lr;
+
+    &__item {
+        position: relative;
+        list-style: none;
+        padding: 15px 0;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: calc(50% - 1px);
+            width: 2px;
+            height: 20px;
+            background-color: #2a2a2a;
+        }
+
+        &--link {
+            transition: $animation;
+            color: #2a2a2a;
+            font-size: .8rem;
+            font-weight: bold;
+            text-decoration: none;
+
+            img {
+                width: 20px;
+                transform: rotate(90deg);
+            }
+
+            &:hover {
+                color: $orange;
+            }
+        }
+    }
+}
+
+.section-title {
+    padding: 50px;
+    color: $silver;
+    font-size: 2.57rem;
+    text-align: center;
+}
