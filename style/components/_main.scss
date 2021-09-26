@@ -3,8 +3,13 @@
     padding: 0;
 }
 html {
-    font-size: 16px;
+    // font-size: 16px;
     overflow-x: hidden;
+}
+
+body {
+    padding-top: toRem(112);
+    overflow-x: hidden;   
 }
 
 $orange: #ff7062;
@@ -33,6 +38,7 @@ $animation: .2s;
     position: fixed;
     left: 20px;
     bottom: 50px;
+    z-index: 1;
     transform: rotate(180deg);
     writing-mode: vertical-lr;
 
@@ -71,8 +77,11 @@ $animation: .2s;
 }
 
 .section-title {
-    padding: 50px;
+    padding: 30px;
     color: $silver;
     font-size: 2.57rem;
-    text-align: center;
+
+    img {
+        width: 30px;
+    }
 }

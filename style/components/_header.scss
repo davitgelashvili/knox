@@ -1,11 +1,16 @@
 $fontSize: 1rem;
 
 .header {
-    position: sticky;
+    width: 100%;
+    position: fixed;
     top: 0;
-    padding: 3.5rem 0;
+    padding: toRem(30) 0;
     background-color: #fff;
-    border-bottom: 1px solid #eeeeee;
+    z-index: 1;
+
+    &.active {
+        box-shadow: 0px 3px 20px 10px rgba(151, 153, 193, 0.13);
+    }
 
     &__contact {
         list-style: none;
