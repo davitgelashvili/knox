@@ -20,6 +20,14 @@
         margin-bottom: 30px;
         box-sizing: border-box;
 
+        @media (max-width: 991px) {
+            padding: 30px 10px 0 35px;
+        }
+
+        @media (max-width: 720px) {
+            padding: 30px 0 0 35px;
+        }
+
         &--border {
             &:nth-of-type(1) {
                 border-right: 1px solid  rgba($silver, .1);

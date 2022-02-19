@@ -5,6 +5,12 @@ $sliderHeight: 400px;
         width: 100%;
         height: $sliderHeight;
 
+        @media (max-width: 991px) {
+            height: 200px;
+            margin-top: -200px;
+            background: #2a2a2aa9;
+        }
+
 
         &--list {
             width: 100%;
@@ -25,6 +31,10 @@ $sliderHeight: 400px;
 
         &--texts {
             padding: 100px 50px 50px 100px;
+
+            @media (max-width: 991px) {
+                padding: 25px 0px 0px 25px;
+            }
         }
 
         &--title {
@@ -34,6 +44,10 @@ $sliderHeight: 400px;
                 color: #2a2a2a;
                 transition: $animation;
                 text-decoration: none;
+
+                @media (max-width: 991px) {
+                    color: #fff;
+                }
 
                 &:hover {
                     color: $orange;
@@ -45,6 +59,10 @@ $sliderHeight: 400px;
             margin-top: 7px;
             color: #757575;
             font-size: 1rem;
+
+            @media (max-width: 991px) {
+                color: #fff;
+            }
 
             p {
                 margin: 8px 0;

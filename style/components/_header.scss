@@ -29,6 +29,18 @@ $fontSize: 1rem;
                 margin-right: 8px;
             }
 
+            @media (max-width: 576px){
+                padding: 15px 15px;
+
+                img {
+                    margin-right: 0;
+                }
+
+                span {
+                    display: none;
+                }
+            }
+
             &:hover {
                 background-color: $silver;
             }
@@ -57,11 +69,15 @@ $fontSize: 1rem;
     }
 
     &__link {
-        padding: 2.5rem 1.5rem;
+        padding: 2.5rem 1rem;
         transition: $animation;
         color: $silver;
-        font-size: $fontSize;
+        font-size: 16px;
         text-decoration: none;
+
+        @media (max-width: 576px){
+            padding: 2.5rem 0;
+        }
 
         &--active {
             color: $orange;
@@ -69,12 +85,13 @@ $fontSize: 1rem;
 
         span {
             margin-top: -30px;
-            padding: 3px 7px;
+            padding: 3px 3px;
             border-radius: 5px;
-            background-color: $orange;
-            color: #fff;
+            // background-color: $orange;
+            // border: 1px solid $orange;
+            color: $orange;
             font-weight: 700;
-            position: absolute;
+            // position: absolute;
         }
 
         &:hover {

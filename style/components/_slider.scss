@@ -6,6 +6,26 @@
 
     &__title {
         font-size: 2.5rem;
+
+        p {
+            width: 0px;
+            transition: 1.2s;
+            white-space: nowrap;
+            overflow: hidden;
+
+            &.active {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 991px) {
+            font-size: 2rem;
+            width: 100%;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 24px;
+        }
     }
 
     &__cover {
@@ -13,6 +33,11 @@
 
         &--img {
             width: 100%;
+
+            @media (max-width: 991px){
+                width: 46%;
+                margin: 10px auto;
+            }
         }
     }
 }
@@ -41,19 +66,8 @@
             color: $orange;
         }
     }
-}
 
-
-@media (max-width: 991px) {
-    .statistics {
+    @media (max-width: 991px) {
         position: relative;
-    }
-    .slider__title {
-        font-size: 2rem;
-        width: 100%;
-    }
-    .slider__cover--img {
-        width: 46%;
-        margin: 10px auto;
     }
 }

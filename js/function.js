@@ -1,4 +1,8 @@
 $(document).ready(function(){
+    setTimeout(() => { $('body').removeClass("loading") }, 300);
+
+    setTimeout(() => {$('.slider__title--first').addClass('active')}, 500);
+    setTimeout(() => {$('.slider__title--second').addClass('active')}, 900);
     // head scroll
     $(window).scroll(function() {
         if ($(this).scrollTop() > 10) {

@@ -5,14 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/bootstrap-grid.css">
+    <link rel="stylesheet" href="../style/owl.carousel.min.css">
+    <link rel="stylesheet" href="../style/owl.theme.default.min.css">
     <link rel="stylesheet" href="../style/style.css">
     <title>KNOX LTD</title>
+    <meta name="description" content="საიტებისა დამზადება, სოც. ქსელების გვერდის მართვა, SEO">
+    <meta name="keywords" content="საიტის დამზადება, ბრენდინგი, SEO ოპტიმიზაცია, Facebook გვერდის მართვა, საიტების დამზადება, საძიებო სისტემებში ოპტიმიზაცია">
+	<meta property="og:title" content="Knox - Softweare development company">
+    <meta property="og:description" content="საიტებისა დამზადება, სოც. ქსელების გვერდის მართვა, SEO">  
+    <meta property="og:site_name" content="KNOX">
+    <meta property="og:image" content="./img/work.jpg">
+    <meta property="og:type" content="website">
+    <!-- <meta property="og:url" content="https://smartweb.ge/"> -->
 </head>
-<body>
+<body class="loading">
     <header class="header">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-1">
+                <div class="col-lg-1 col-3">
                     <div class="logo">
                         <img src="../img/logo.png" alt="" class="logo__img">
                     </div>
@@ -24,19 +34,29 @@
                                 <a href="../" class="navbar__link caps-roman">საწყისი</a>
                             </li>
                             <li class="navbar__item">
-                                <a href="/wordpress" class="navbar__link caps-roman navbar__link--active">
-                                    <span>Wordpress</span>
-                                    ბიუჯეტური საიტი
+                                <a href="../wordpress" class="navbar__link navbar__link--active caps-roman">
+                                    ბიუჯეტური <span>WP</span>-ს საიტი
                                 </a>
                             </li>
                         </ul>
                     </nav>
                 </div>
-                <div class="col-lg-3 d-lg-flex d-none justify-content-end">
+                <div class="col-7 d-flex d-lg-none">
+                    <nav class="navbar">
+                        <ul class="navbar__content d-flex">
+                            <li class="navbar__item">
+                                <a href="../" class="navbar__link caps-roman">
+                                    საწყისი
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-2 d-flex justify-content-end">
                     <li class="header__contact d-flex justify-content-end">
                         <a href="tel: 591111996" class="header__contact--link caps-roman d-flex align-items-center">
                             <img src="../img/call.svg" alt="">
-                            დაგვირეკე
+                            <span>დაგვირეკე</span>
                         </a>
                     </li>
                 </div>
@@ -44,21 +64,145 @@
         </div>
     </header>
 
-    <section class="section" id="services">
-        <div class="services">
-            <h1 class="section-title caps-roman d-flex flex-column align-items-center justify-content-center">
-                WORDPRESS დაგეხმარებათ შექმნათ ბიუჯეტური საიტი
-                <img src="../img/line3.svg" alt="">
-            </h1>
-            <div class="container-fluid">
-                კონტენტი
+    <ul class="social d-flex">
+        <li class="social__item">
+            <a href="" class="social__item--link caps-roman">
+                <img src="../img/fb.svg" alt="">
+                FACEBOOK
+            </a>
+        </li>
+        <li class="social__item">
+            <a href="" class="social__item--link caps-roman">
+                <img src="../img/in.svg" alt="">
+                LINKED IN
+            </a>
+        </li>
+        <li class="social__item">
+            <a href="" class="social__item--link caps-roman">
+                <img src="../img/inst.svg" alt="">
+                INSTAGRAM
+            </a>
+        </li>
+    </ul>
+
+    <div class="slider d-flex justify-content-center flex-column">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12 d-flex align-items-center">
+                    <h1 class="slider__title caps-roman d-none d-lg-flex flex-column justify-content-center">
+                        <p class="slider__title--first">შექმენი საიტი</p>
+                        <p class="slider__title--second">შენი ბიზნესისთვის</p>
+                    </h1>
+
+                    <div class="statistics d-none d-lg-flex flex-column flex-lg-row">
+                        <div class="statistics__item caps-roman">
+                            <strong class="statistics__text statistics__text--orange">100+</strong>
+                            <span class="statistics__text">Complete Projects</span>
+                        </div>
+                        <div class="statistics__item caps-roman">
+                            <strong class="statistics__text statistics__text--orange">80</strong>
+                            <span class="statistics__text">Team Members</span>
+                        </div>
+                        <div class="statistics__item caps-roman">
+                            <strong class="statistics__text statistics__text--orange">5,220,000</strong>
+                            <span class="statistics__text">Line of code written</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 d-flex flex-column align-items-center">
+                    <h1 class="slider__title caps-roman d-flex d-lg-none flex-column justify-content-center">
+                        <p class="slider__title--first">შექმენი საიტი</p>
+                        <p class="slider__title--second">შენი ბიზნესისთვის</p>
+                    </h1>
+                    <div class="slider__cover d-flex justify-content-lg-end flex-column flex-lg-row">
+
+                        <img src="../img/blog-writer.png" class="slider__cover--img" alt="">
+
+                        <div class="statistics d-flex d-lg-none flex-column">
+                            <div class="statistics__item caps-roman">
+                                <strong class="statistics__text statistics__text--orange">100+</strong>
+                                <span class="statistics__text">Complete Projects</span>
+                            </div>
+                            <div class="statistics__item caps-roman">
+                                <strong class="statistics__text statistics__text--orange">80</strong>
+                                <span class="statistics__text">Team Members</span>
+                            </div>
+                            <div class="statistics__item caps-roman">
+                                <strong class="statistics__text statistics__text--orange">5,220,000</strong>
+                                <span class="statistics__text">Line of code written</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
 
 
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <ul class="footer__menu">
+                        <li class="footer__menu--item">
+                            <a href="" class="footer__menu--link">fb</a>
+                        </li>
+                        <li class="footer__menu--item">
+                            <a href="" class="footer__menu--link">instagram</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul class="footer__menu">
+                        <li class="footer__menu--item">
+                            <a href="" class="footer__menu--link">სერვისები</a>
+                        </li>
+                        <li class="footer__menu--item">
+                            <a href="" class="footer__menu--link">საიტების გაკეთება</a>
+                        </li>
+                        <li class="footer__menu--item">
+                            <a href="" class="footer__menu--link">სოც. მედია მენეჯმენტი</a>
+                        </li>
+                        <li class="footer__menu--item">
+                            <a href="" class="footer__menu--link">სეო ოპტიმიზაცია</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul class="footer__menu">
+                        <li class="footer__menu--item">
+                            <a href="" class="footer__menu--link">DEVELOPMENT</a>
+                        </li>
+                        <li class="footer__menu--item">
+                            <a href="" class="footer__menu--link">React Development</a>
+                        </li>
+                        <li class="footer__menu--item">
+                            <a href="" class="footer__menu--link">Angular Development</a>
+                        </li>
+                        <li class="footer__menu--item">
+                            <a href="" class="footer__menu--link">PHP Development</a>
+                        </li>
+                        <li class="footer__menu--item">
+                            <a href="" class="footer__menu--link">Wordpress Development</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul class="footer__menu">
+                        <li class="footer__menu--item">
+                            <a href="" class="footer__menu--link">UI/UX Design</a>
+                        </li>
+                        <li class="footer__menu--item">
+                            <a href="" class="footer__menu--link">Mobile App Development</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
     <script src="../js/function.js"></script>
 </body>
 </html>
