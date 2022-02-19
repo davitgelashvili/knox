@@ -20,7 +20,7 @@ $(document).ready(function(){
     });
 
     function fetcFun(){
-        fetch('../projects.json')
+        fetch('../json/projects.json')
         .then(response => response.json())
         .then(json => json.map( (item, id)=> {
             $('.projects__slider--list').append(`
