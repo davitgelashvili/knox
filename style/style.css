@@ -81,7 +81,7 @@ body {
 }
 
 .social__item--link:hover {
-  color: #ff7062;
+  color: #7c00f0;
 }
 
 .section {
@@ -128,7 +128,7 @@ body {
 
 .header__contact--link {
   padding: 15px 30px;
-  background-color: #ff7062;
+  background-color: #7c00f0;
   border-radius: 5px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -195,19 +195,19 @@ body {
 }
 
 .navbar__link--active {
-  color: #ff7062;
+  color: #7c00f0;
 }
 
 .navbar__link span {
   margin-top: -30px;
   padding: 3px 3px;
   border-radius: 5px;
-  color: #ff7062;
+  color: #7c00f0;
   font-weight: 700;
 }
 
 .navbar__link:hover {
-  color: #ff7062;
+  color: #7c00f0;
 }
 
 @media (max-width: 991px) {
@@ -224,6 +224,7 @@ body {
 }
 
 .slider__title {
+  color: #7c00f0;
   font-size: 2.5rem;
 }
 
@@ -292,7 +293,7 @@ body {
 }
 
 .statistics__text--orange {
-  color: #ff7062;
+  color: #7c00f0;
 }
 
 @media (max-width: 991px) {
@@ -370,7 +371,7 @@ body {
 }
 
 .services__item:hover .services__item--title {
-  color: #ff7062;
+  color: #7c00f0;
 }
 
 .projects__slider {
@@ -432,7 +433,7 @@ body {
 }
 
 .projects__slider--title a:hover {
-  color: #ff7062;
+  color: #7c00f0;
 }
 
 .projects__slider--desc {
