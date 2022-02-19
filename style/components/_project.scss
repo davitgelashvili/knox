@@ -1,0 +1,54 @@
+$sliderHeight: 400px;
+
+.projects {
+    &__slider {
+        width: 100%;
+        height: $sliderHeight;
+
+
+        &--list {
+            width: 100%;
+            height: 400px;
+            padding: 0 35px;
+            overflow: hidden;
+        }
+
+        &--cover {
+            width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+
+        &--item {
+            width: 100%;
+        }
+
+        &--texts {
+            padding: 100px 50px 50px 100px;
+        }
+
+        &--title {
+            font-size: 1.125rem;
+            
+            a {
+                color: #2a2a2a;
+                transition: $animation;
+                text-decoration: none;
+
+                &:hover {
+                    color: $orange;
+                }
+            }
+        }
+
+        &--desc {
+            margin-top: 7px;
+            color: #757575;
+            font-size: 1rem;
+
+            p {
+                margin: 8px 0;
+            }
+        }
+    }
+}

@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/bootstrap-grid.css">
+    <link rel="stylesheet" href="./style/owl.carousel.min.css">
+    <link rel="stylesheet" href="./style/owl.theme.default.min.css">
     <link rel="stylesheet" href="./style/style.css">
     <title>KNOX LTD</title>
 </head>
@@ -211,10 +213,44 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-6">
-                        აღწერა
+                        <div class="projects__slider--list">
+                        </div>
                     </div>
                     <div class="col-6">
-                        სურათი
+                        <div class="projects__slider owl-carousel owl-theme owl-loaded">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <div class="contact">
+            <h1 class="section-title caps-roman d-flex flex-column align-items-center justify-content-center">
+                კონტაქტი
+                <img src="./img/line3.svg" alt="">
+            </h1>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6">
+                        <form class="contact__form">
+                            <label class="contact__form--label">
+                                <input type="text" class="contact__form--input">
+                                <input type="text" class="contact__form--input">
+                            </label>
+                        </form>
+                    </div>
+                    <div class="col-6">
+                        <div class="">
+                            <p>9 kapanadze street,
+                                Rustavi, Georgia
+                            </p>
+                            <p>
+                                (+995) 591 111 996
+                            </p>
+                        </div>
+                        <iframe class="contact__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d887.3997533778662!2d44.98576585848286!3d41.57259725497051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4044041d8fc809c5%3A0xff682e7a8645f88c!2s9%20Kapanadze%20Street%2C%20Rustavi%2C%20Georgia!5e0!3m2!1sen!2sus!4v1645273755621!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
             </div>
@@ -306,73 +342,11 @@
     </div> -->
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/function.js"></script>
     <script>
-        $(document).ready(function(){
-            $(window).scroll(function() {
-                if ($(this).scrollTop() > 10) {
-                    $('.header').addClass("active");
-                } else {
-                    $('.header').removeClass("active");
-                }
-            });
-
-            function getLinkId(id, url) {
-                if (!url) {
-                    url = window.location.href;
-                }
-                const ids = id.replace(/[\[\]]/g, "\\$&");
-
-                const regex = new RegExp(`[?&]${ids}(=([^&#]*)|&|#|$)`);
-                const results = regex.exec(url);
-
-                if (!results) {
-                    return null;
-                }
-                if (!results[2]) {
-                    return "";
-                }
-                return decodeURIComponent(results[2].replace(/\+/g, " "));
-            }
-
-
-            const id = getLinkId("lan");
-
-            console.log(id == 'ka')
-
-            function fetcFun(){
-                fetch('data_ge.json')
-                .then(response => response.json())
-                .then(json => {
-                   for (let i = 0; i < json.length; i++) {
-                       const element = json[i];
-                       element.map((item1, item2) => {
-                           
-                           console.log(item)
-                       })
-                   }
-                });
-            }
-            fetcFun()
-            console.log(fetcFun())
-
-
-
-
-            // Add smooth scrolling to all links
-            $(".navbar__link").on('click', function(event) {
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    event.preventDefault();
-                    // Store hash
-                    var hash = this.hash;
-                    $('html, body').animate({scrollTop: $(hash).offset().top}, 800, function(){
-                        window.location.hash = hash;
-                    });
-                }
-            });
-
-
-        });
+        // projectSlider();
     </script>
+
 </body>
 </html>
