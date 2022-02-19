@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/bootstrap-grid.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>KNOX LTD</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-1">
+                    <div class="logo">
+                        <img src="../img/logo.png" alt="" class="logo__img">
+                    </div>
+                </div><!-- logo end -->
+                <div class="col-lg-8 d-lg-flex d-none">
+                    <nav class="navbar">
+                        <ul class="navbar__content d-flex">
+                            <li class="navbar__item">
+                                <a href="../" class="navbar__link caps-roman">საწყისი</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="/wordpress" class="navbar__link caps-roman navbar__link--active">
+                                    <span>Wordpress</span>
+                                    ბიუჯეტური საიტი
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3 d-lg-flex d-none justify-content-end">
+                    <li class="header__contact d-flex justify-content-end">
+                        <a href="tel: 591111996" class="header__contact--link caps-roman d-flex align-items-center">
+                            <img src="../img/call.svg" alt="">
+                            დაგვირეკე
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section" id="services">
+        <div class="services">
+            <h1 class="section-title caps-roman d-flex flex-column align-items-center justify-content-center">
+                WORDPRESS დაგეხმარებათ შექმნათ ბიუჯეტური საიტი
+                <img src="../img/line3.svg" alt="">
+            </h1>
+            <div class="container-fluid">
+                კონტენტი
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 10) {
+                    $('.header').addClass("active");
+                } else {
+                    $('.header').removeClass("active");
+                }
+            });
+
+            function getLinkId(id, url) {
+                if (!url) {
+                    url = window.location.href;
+                }
+                const ids = id.replace(/[\[\]]/g, "\\$&");
+
+                const regex = new RegExp(`[?&]${ids}(=([^&#]*)|&|#|$)`);
+                const results = regex.exec(url);
+
+                if (!results) {
+                    return null;
+                }
+                if (!results[2]) {
+                    return "";
+                }
+                return decodeURIComponent(results[2].replace(/\+/g, " "));
+            }
+
+
+            const id = getLinkId("lan");
+
+            console.log(id == 'ka')
+
+            function fetcFun(){
+                fetch('data_ge.json')
+                .then(response => response.json())
+                .then(json => {
+                   for (let i = 0; i < json.length; i++) {
+                       const element = json[i];
+                       element.map((item1, item2) => {
+                           
+                           console.log(item)
+                       })
+                   }
+                });
+            }
+            fetcFun()
+            console.log(fetcFun())
+
+
+
+
+            // Add smooth scrolling to all links
+            $(".navbar__link").on('click', function(event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    // Store hash
+                    var hash = this.hash;
+                    $('html, body').animate({scrollTop: $(hash).offset().top}, 800, function(){
+                        window.location.hash = hash;
+                    });
+                }
+            });
+
+
+        });
+    </script>
+</body>
+</html>

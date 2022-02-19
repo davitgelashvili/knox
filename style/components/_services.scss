@@ -1,5 +1,5 @@
 .services {
-    margin: 50px 0;
+    // margin: 50px 0;
 
     &:hover {
         .services__cover {
@@ -44,9 +44,13 @@
         }
 
         &--desc {
-            margin-top: 15px;
+            margin-top: 7px;
             color: $silver;
             font-size: 1rem;
+
+            p {
+                margin: 8px 0;
+            }
         }
 
         &:hover {

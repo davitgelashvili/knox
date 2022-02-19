@@ -1,15 +1,15 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 html {
-    // font-size: 16px;
     overflow-x: hidden;
 }
 
 body {
-    padding-top: toRem(112);
-    overflow-x: hidden;   
+    padding-top: 112px;
+    overflow-x: hidden;
 }
 
 $orange: #ff7062;
@@ -19,11 +19,11 @@ $animation: .2s;
 
 @font-face {
     font-family: 'helvetica-caps-roman';
-    src: url('../../fonts/helvetica-caps-roman.ttf');
+    src: url('../fonts/helvetica-caps-roman.ttf');
 }
 @font-face {
     font-family: 'helvetica-roman';
-    src: url('../../fonts/helvetica-roman.ttf');
+    src: url('../fonts/helvetica-roman.ttf');
 }
 
 .h-roman{
@@ -76,12 +76,19 @@ $animation: .2s;
     }
 }
 
+.section {
+    padding-top: 120px;
+}
+
 .section-title {
-    padding: 30px;
     color: $silver;
     font-size: 2.57rem;
 
     img {
         width: 30px;
     }
+}
+
+@media (max-width: 991px) {
+
 }

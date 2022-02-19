@@ -1,11 +1,11 @@
 .slider {
     width: 100%;
-    height: calc(100vh - 280px);
+    height: calc(100vh - 380px);
     position: relative;
     background-color: #fff;
 
     &__title {
-        font-size: 4.5rem;
+        font-size: 2.5rem;
     }
 
     &__cover {
@@ -26,6 +26,7 @@
     border-radius: 12px;
     box-shadow: 0px 0px 23px -12px #2a2a2a;
     background-color: #fff;
+    box-sizing: border-box;
 
     &__item {
         position: relative;
@@ -39,5 +40,20 @@
         &--orange {
             color: $orange;
         }
+    }
+}
+
+
+@media (max-width: 991px) {
+    .statistics {
+        position: relative;
+    }
+    .slider__title {
+        font-size: 2rem;
+        width: 100%;
+    }
+    .slider__cover--img {
+        width: 46%;
+        margin: 10px auto;
     }
 }

@@ -17,30 +17,39 @@
                         <img src="./img/logo.png" alt="" class="logo__img">
                     </div>
                 </div><!-- logo end -->
-                <div class="col-lg-8">
+                <div class="col-lg-8 d-lg-flex d-none">
                     <nav class="navbar">
                         <ul class="navbar__content d-flex">
                             <li class="navbar__item">
-                                <a href="" class="navbar__link caps-roman">SERVICES</a>
+                                <a href="#services" class="navbar__link caps-roman">სერვისები</a>
                             </li>
                             <li class="navbar__item">
-                                <a href="" class="navbar__link caps-roman">PROJECTS</a>
+                                <a href="#projects" class="navbar__link caps-roman">პროექტები</a>
                             </li>
-                            <li class="navbar__item">
+                            <!-- <li class="navbar__item">
                                 <a href="" class="navbar__link caps-roman">TEAM</a>
-                            </li>
-                            <li class="navbar__item">
+                            </li> -->
+                            <!-- <li class="navbar__item">
                                 <a href="" class="navbar__link caps-roman">CAREER</a>
+                            </li> -->
+                            <li class="navbar__item">
+                                <a href="#contact" class="navbar__link caps-roman">კონტაქტი</a>
                             </li>
                             <li class="navbar__item">
-                                <a href="" class="navbar__link caps-roman">CLIENTS</a>
+                                <a href="wordpress" class="navbar__link caps-roman">
+                                    <span>Wordpress</span>
+                                    ბიუჯეტური საიტი
+                                </a>
                             </li>
                         </ul>
                     </nav>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 d-lg-flex d-none justify-content-end">
                     <li class="header__contact d-flex justify-content-end">
-                        <a href="" class="header__contact--link caps-roman">CONTACT US</a>
+                        <a href="tel: 591111996" class="header__contact--link caps-roman d-flex align-items-center">
+                            <img src="./img/call.svg" alt="">
+                            დაგვირეკე
+                        </a>
                     </li>
                 </div>
             </div>
@@ -71,10 +80,13 @@
     <div class="slider d-flex justify-content-center flex-column">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 d-flex align-items-center">
-                    <h1 class="slider__title caps-roman">Creative You Bussines Web Site</h1>
+                <div class="col-lg-6 col-12 d-flex align-items-center">
+                    <h1 class="slider__title caps-roman d-none d-lg-flex flex-column">
+                        <p>შექმენი საიტი</p>
+                        <p>შენი ბიზნესისთვის</p>
+                    </h1>
 
-                    <div class="statistics d-flex">
+                    <div class="statistics d-none d-lg-flex flex-column flex-lg-row">
                         <div class="statistics__item caps-roman">
                             <span class="statistics__text statistics__text--orange">100+</span>
                             <span class="statistics__text">Complete Projects</span>
@@ -89,83 +101,131 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="slider__cover d-flex justify-content-end">
+                <div class="col-lg-6 col-12">
+                    <h1 class="slider__title caps-roman d-flex d-lg-none flex-column">
+                        <p>შექმენი საიტი</p>
+                        <p>შენი ბიზნესისთვის</p>
+                    </h1>
+                    <div class="slider__cover d-flex justify-content-lg-end flex-column flex-lg-row">
+
                         <img src="./img/blog-writer.png" class="slider__cover--img" alt="">
+
+                        <div class="statistics d-flex d-lg-none flex-column">
+                            <div class="statistics__item caps-roman">
+                                <span class="statistics__text statistics__text--orange">100+</span>
+                                <span class="statistics__text">Complete Projects</span>
+                            </div>
+                            <div class="statistics__item caps-roman">
+                                <span class="statistics__text statistics__text--orange">80</span>
+                                <span class="statistics__text">Team Members</span>
+                            </div>
+                            <div class="statistics__item caps-roman">
+                                <span class="statistics__text statistics__text--orange">5,220,000</span>
+                                <span class="statistics__text">Line of code written</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="services">
-        <h1 class="section-title caps-roman d-flex flex-column align-items-center justify-content-center">
-            SERVICES
-            <img src="./img/line3.svg" alt="">
-        </h1>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-7">
-                    <div class="row">
-                        <div class="col-6 services__item--border">
-                            <div class="services__item">
-                                <div>
-                                    <h1 class="services__item--title caps-roman">WEB DESIGN</h1>
-                                    <img class="services__item--icon" src="./img/line2.svg" alt="">
-                                </div>
-                                <div class="services__item--desc h-roman">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea cum rem ipsam facere exercitationem maxime, ratione animi nisi perferendis atque natus reprehenderit esse necessitatibus accusantium dolores optio perspiciatis modi? Laudantium.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 services__item--border">
-                            <div class="services__item">
-                                <div>
-                                    <h1 class="services__item--title caps-roman">MOCK-UP DESIGN</h1>
-                                    <img class="services__item--icon" src="./img/line2.svg" alt="">
-                                </div>
-                                <div class="services__item--desc h-roman">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea cum rem ipsam facere exercitationem maxime, ratione animi nisi perferendis atque natus reprehenderit esse necessitatibus accusantium dolores optio perspiciatis modi? Laudantium.
+    <section class="section" id="services">
+        <div class="services">
+            <h1 class="section-title caps-roman d-flex flex-column align-items-center justify-content-center">
+                სერვისები
+                <img src="./img/line3.svg" alt="">
+            </h1>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="row">
+                            <div class="col-12 col-sm-6 services__item--border">
+                                <div class="services__item">
+                                    <div>
+                                        <h1 class="services__item--title caps-roman">საიტის დამზადება</h1>
+                                        <img class="services__item--icon" src="./img/line2.svg" alt="">
+                                    </div>
+                                    <div class="services__item--desc h-roman">
+                                        <p>ჩვენთან ნებისმიერი სახის ვებ საიტის დამზადება არის შესაძლებელი.</p>    
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-6 services__item--border">
-                            <div class="services__item">
-                                <div>
-                                    <h1 class="services__item--title caps-roman">WEB DEVELOPMENT</h1>
-                                    <img class="services__item--icon" src="./img/line2.svg" alt="">
-                                </div>
-                                <div class="services__item--desc h-roman">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea cum rem ipsam facere exercitationem maxime, ratione animi nisi perferendis atque natus reprehenderit esse necessitatibus accusantium dolores optio perspiciatis modi? Laudantium.
+                            <div class="col-12 col-sm-6 services__item--border">
+                                <div class="services__item">
+                                    <div>
+                                        <h1 class="services__item--title caps-roman">ბრენდინგი</h1>
+                                        <img class="services__item--icon" src="./img/line2.svg" alt="">
+                                    </div>
+                                    <div class="services__item--desc h-roman">
+                                        <p>
+                                            ბრენდინგი წარმოადგენს კომპანიის იდენტობას, რომელზე დაფუძნებითაც ხორციელდება მისი მომდევნო განვითარება და საქმიანობა.
+                                        </p>    
+                                        <p>
+                                            განისაზღვრება საკომუნიკაციო ენა, ვიზუალი, დამოკიდებულება მომხმარებლების მიმართ.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-6 services__item--border">
-                            <div class="services__item">
-                                <div>
-                                    <h1 class="services__item--title caps-roman">MOBILE APPLICATION</h1>
-                                    <img class="services__item--icon" src="./img/line2.svg" alt="">
+                            <div class="col-12 col-sm-6 services__item--border">
+                                <div class="services__item">
+                                    <div>
+                                        <h1 class="services__item--title caps-roman">მარკეტინგი</h1>
+                                        <img class="services__item--icon" src="./img/line2.svg" alt="">
+                                    </div>
+                                    <div class="services__item--desc h-roman">
+                                        <p>FACEBOOK გვერდის მართვა.</p>    
+                                        <p>INSTAGRAM გვერდის მართვა.</p>    
+                                        <p>SEO ოპტიმიზაცია საძიებო სისტემებში.</p>
+                                        <p>Google AdWords რეკლამა</p>
+                                    </div>
                                 </div>
-                                <div class="services__item--desc h-roman">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea cum rem ipsam facere exercitationem maxime, ratione animi nisi perferendis atque natus reprehenderit esse necessitatibus accusantium dolores optio perspiciatis modi? Laudantium.
+                            </div>
+                            <div class="col-12 col-sm-6 services__item--border">
+                                <div class="services__item">
+                                    <div>
+                                        <h1 class="services__item--title caps-roman">MOBILE APPLICATION</h1>
+                                        <img class="services__item--icon" src="./img/line2.svg" alt="">
+                                    </div>
+                                    <div class="services__item--desc h-roman">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea cum rem ipsam facere exercitationem maxime, ratione animi nisi perferendis atque natus reprehenderit esse necessitatibus accusantium dolores optio perspiciatis modi? Laudantium.
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-5 services__cover" style="background-image: url('./img/services-cover.jpg');">
-                    <!-- background -->
+                    <div class="col-lg-5 services__cover" style="background-image: url('./img/services-cover.jpg');">
+                        <!-- background -->
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="services">
+    <section class="section" id="projects">
+        <div class="projects">
+            <h1 class="section-title caps-roman d-flex flex-column align-items-center justify-content-center">
+                პროექტები
+                <img src="./img/line3.svg" alt="">
+            </h1>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6">
+                        აღწერა
+                    </div>
+                    <div class="col-6">
+                        სურათი
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <div class="services">
         
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-5 services__cover" style="background-image: url('./img/work.jpg');">
-                    <!-- background -->
                 </div>
                 <div class="col-lg-7">
                     <h1 class="section-title caps-roman d-flex flex-column">
@@ -173,7 +233,7 @@
                         <img src="./img/line3-left.svg" alt="">
                     </h1>
                     <div class="row">
-                        <div class="col-4 services__item--border">
+                        <div class="col-12 col-md-4 col-sm-6 services__item--border">
                             <div class="services__item">
                                 <div>
                                     <h1 class="services__item--title caps-roman">APPLICATIONS</h1>
@@ -184,7 +244,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 services__item--border">
+                        <div class="col-12 col-md-4 col-sm-6 services__item--border">
                             <div class="services__item">
                                 <div>
                                     <h1 class="services__item--title caps-roman">WEB DESIGN</h1>
@@ -195,7 +255,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 services__item--border">
+                        <div class="col-12 col-lg-4 col-sm-5 services__item--border">
                             <div class="services__item">
                                 <div>
                                     <h1 class="services__item--title caps-roman">DEVELOPMENT</h1>
@@ -206,7 +266,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 services__item--border">
+                        <div class="col-12 col-lg-4 col-sm-5 services__item--border">
                             <div class="services__item">
                                 <div>
                                     <h1 class="services__item--title caps-roman">PROGRAMMING</h1>
@@ -217,7 +277,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 services__item--border">
+                        <div class="col-12 col-lg-4 col-sm-5 services__item--border">
                             <div class="services__item">
                                 <div>
                                     <h1 class="services__item--title caps-roman">CLOUD HOSTING</h1>
@@ -228,7 +288,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 services__item--border">
+                        <div class="col-12 col-lg-4 col-sm-5 services__item--border">
                             <div class="services__item">
                                 <div>
                                     <h1 class="services__item--title caps-roman">24/7 SUPPORT</h1>
@@ -243,7 +303,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
@@ -255,6 +315,62 @@
                     $('.header').removeClass("active");
                 }
             });
+
+            function getLinkId(id, url) {
+                if (!url) {
+                    url = window.location.href;
+                }
+                const ids = id.replace(/[\[\]]/g, "\\$&");
+
+                const regex = new RegExp(`[?&]${ids}(=([^&#]*)|&|#|$)`);
+                const results = regex.exec(url);
+
+                if (!results) {
+                    return null;
+                }
+                if (!results[2]) {
+                    return "";
+                }
+                return decodeURIComponent(results[2].replace(/\+/g, " "));
+            }
+
+
+            const id = getLinkId("lan");
+
+            console.log(id == 'ka')
+
+            function fetcFun(){
+                fetch('data_ge.json')
+                .then(response => response.json())
+                .then(json => {
+                   for (let i = 0; i < json.length; i++) {
+                       const element = json[i];
+                       element.map((item1, item2) => {
+                           
+                           console.log(item)
+                       })
+                   }
+                });
+            }
+            fetcFun()
+            console.log(fetcFun())
+
+
+
+
+            // Add smooth scrolling to all links
+            $(".navbar__link").on('click', function(event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    // Store hash
+                    var hash = this.hash;
+                    $('html, body').animate({scrollTop: $(hash).offset().top}, 800, function(){
+                        window.location.hash = hash;
+                    });
+                }
+            });
+
 
         });
     </script>

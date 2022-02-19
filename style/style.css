@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -8,18 +10,18 @@ html {
 }
 
 body {
-  padding-top: 7rem;
+  padding-top: 112px;
   overflow-x: hidden;
 }
 
 @font-face {
   font-family: 'helvetica-caps-roman';
-  src: url("../../fonts/helvetica-caps-roman.ttf");
+  src: url("../fonts/helvetica-caps-roman.ttf");
 }
 
 @font-face {
   font-family: 'helvetica-roman';
-  src: url("../../fonts/helvetica-roman.ttf");
+  src: url("../fonts/helvetica-roman.ttf");
 }
 
 .h-roman {
@@ -77,8 +79,11 @@ body {
   color: #ff7062;
 }
 
+.section {
+  padding-top: 120px;
+}
+
 .section-title {
-  padding: 30px;
   color: #757575;
   font-size: 2.57rem;
 }
@@ -91,7 +96,7 @@ body {
   width: 100%;
   position: fixed;
   top: 0;
-  padding: 1.875rem 0;
+  padding: 30px 0;
   background-color: #fff;
   z-index: 1;
 }
@@ -116,12 +121,18 @@ body {
   text-decoration: none;
 }
 
+.header__contact--link img {
+  width: 15px;
+  margin-right: 8px;
+}
+
 .header__contact--link:hover {
   background-color: #757575;
 }
 
 .logo {
   width: 100%;
+  max-width: 88px;
 }
 
 .logo__img {
@@ -150,19 +161,39 @@ body {
   text-decoration: none;
 }
 
+.navbar__link--active {
+  color: #ff7062;
+}
+
+.navbar__link span {
+  margin-top: -30px;
+  padding: 3px 7px;
+  border-radius: 5px;
+  background-color: #ff7062;
+  color: #fff;
+  font-weight: 700;
+  position: absolute;
+}
+
 .navbar__link:hover {
   color: #ff7062;
 }
 
+@media (max-width: 991px) {
+  .statistics {
+    position: relative;
+  }
+}
+
 .slider {
   width: 100%;
-  height: calc(100vh - 280px);
+  height: calc(100vh - 380px);
   position: relative;
   background-color: #fff;
 }
 
 .slider__title {
-  font-size: 4.5rem;
+  font-size: 2.5rem;
 }
 
 .slider__cover {
@@ -183,6 +214,8 @@ body {
   -webkit-box-shadow: 0px 0px 23px -12px #2a2a2a;
           box-shadow: 0px 0px 23px -12px #2a2a2a;
   background-color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .statistics__item {
@@ -199,8 +232,18 @@ body {
   color: #ff7062;
 }
 
-.services {
-  margin: 50px 0;
+@media (max-width: 991px) {
+  .statistics {
+    position: relative;
+  }
+  .slider__title {
+    font-size: 2rem;
+    width: 100%;
+  }
+  .slider__cover--img {
+    width: 46%;
+    margin: 10px auto;
+  }
 }
 
 .services:hover .services__cover {
@@ -250,9 +293,13 @@ body {
 }
 
 .services__item--desc {
-  margin-top: 15px;
+  margin-top: 7px;
   color: #757575;
   font-size: 1rem;
+}
+
+.services__item--desc p {
+  margin: 8px 0;
 }
 
 .services__item:hover .services__item--title {

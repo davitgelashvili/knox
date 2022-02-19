@@ -1,0 +1,16 @@
+[{
+    "menu": [
+        [{"title": "SERVICES"}, {"url": "/"}],
+        [{"title": "PROJECTS"}, {"url": "/"}],
+        [{"title": "TEAM"}, {"url": "/"}],
+        [{"title": "CAREER"}, {"url": "/"}],
+        [{"title": "CLIENTS"}, {"url": "/"}]
+    ],
+    "footer_menu": [
+        [{"title": "SERVICES"}, {"url": "/"}],
+        [{"title": "PROJECTS"}, {"url": "/"}],
+        [{"title": "TEAM"}, {"url": "/"}],
+        [{"title": "CAREER"}, {"url": "/"}],
+        [{"title": "CLIENTS"}, {"url": "/"}]
+    ]
+}]
