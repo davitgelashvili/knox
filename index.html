@@ -345,7 +345,28 @@
     <script src="./js/owl.carousel.min.js"></script>
     <script src="./js/function.js"></script>
     <script>
-        // projectSlider();
+        function fetcFun(){
+            fetch('./json/projects.json')
+            .then(response => response.json())
+            .then(json => json.map( (item, id)=> {
+                $('.projects__slider--list').append(`
+                    <img class="projects__slider--cover" src="./img/projects/${item.img}" alt="" data-id="${id}" style="display: none;">
+                `)
+                $('.projects__slider').append(`
+                    <div class="projects__slider--item">
+                        <div class="projects__slider--texts">
+                            <h1 class="projects__slider--title caps-roman">
+                                <a href="${item.url}" target="_blank">${item.title}</a>
+                            </h1>
+                            <div class="projects__slider--desc h-roman">
+                                <p>${item.desc}</p>
+                            </div>
+                        </div>
+                    </div>
+                `)
+            })).finally(()=> projectSlider());
+        }
+        fetcFun()
     </script>
 
 </body>
