@@ -36,21 +36,10 @@
                             <li class="navbar__item">
                                 <a href="#projects" class="navbar__link caps-roman">პროექტები</a>
                             </li>
-                            <!-- <li class="navbar__item">
-                                <a href="" class="navbar__link caps-roman">TEAM</a>
-                            </li> -->
-                            <!-- <li class="navbar__item">
-                                <a href="" class="navbar__link caps-roman">CAREER</a>
-                            </li> -->
+
                             <li class="navbar__item">
                                 <a href="#contact" class="navbar__link caps-roman">კონტაქტი</a>
                             </li>
-                            <!-- <li class="navbar__item">
-                                <a href="wordpress" class="navbar__link caps-roman">
-                                    <span>Wordpress</span>
-                                    ბიუჯეტური საიტი
-                                </a>
-                            </li> -->
                             <li class="navbar__item">
                                 <a href="./wordpress" class="navbar__link caps-roman">
                                     ბიუჯეტური <span>WP</span>-ს საიტი
@@ -109,58 +98,35 @@
         </li>
     </ul>
 
-    <div class="slider d-flex justify-content-center flex-column">
+    <section class="slider d-flex justify-content-start flex-column">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-12 d-flex align-items-center">
-                    <h1 class="slider__title caps-roman d-none d-lg-flex flex-column justify-content-center">
-                        <p class="slider__title--first">შექმენი საიტი</p>
-                        <p class="slider__title--second">შენი ბიზნესისთვის</p>
-                    </h1>
-
-                    <div class="statistics d-none d-lg-flex flex-column flex-lg-row">
-                        <div class="statistics__item caps-roman">
-                            <strong class="statistics__text statistics__text--orange">100+</strong>
-                            <span class="statistics__text">Complete Projects</span>
-                        </div>
-                        <div class="statistics__item caps-roman">
-                            <strong class="statistics__text statistics__text--orange">80</strong>
-                            <span class="statistics__text">Team Members</span>
-                        </div>
-                        <div class="statistics__item caps-roman">
-                            <strong class="statistics__text statistics__text--orange">5,220,000</strong>
-                            <span class="statistics__text">Line of code written</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-12 d-flex flex-column align-items-center">
-                    <h1 class="slider__title caps-roman d-flex d-lg-none flex-column justify-content-center">
+                <div class="col-12 d-flex flex-lg-row flex-column">
+                    <h1 class="slider__title caps-roman d-flex flex-column justify-content-center">
                         <p class="slider__title--first">შექმენი საიტი</p>
                         <p class="slider__title--second">შენი ბიზნესისთვის</p>
                     </h1>
                     <div class="slider__cover d-flex justify-content-lg-end flex-column flex-lg-row">
-
-                        <img src="./img/blog-writer.png" class="slider__cover--img" alt="">
-
-                        <div class="statistics d-flex d-lg-none flex-column">
-                            <div class="statistics__item caps-roman">
-                                <strong class="statistics__text statistics__text--orange">100+</strong>
-                                <span class="statistics__text">Complete Projects</span>
-                            </div>
-                            <div class="statistics__item caps-roman">
-                                <strong class="statistics__text statistics__text--orange">80</strong>
-                                <span class="statistics__text">Team Members</span>
-                            </div>
-                            <div class="statistics__item caps-roman">
-                                <strong class="statistics__text statistics__text--orange">5,220,000</strong>
-                                <span class="statistics__text">Line of code written</span>
-                            </div>
-                        </div>
+                        <div class="animation"></div>
                     </div>
                 </div>
             </div>
+            <div class="statistics d-none d-lg-flex flex-column flex-lg-row">
+                <div class="statistics__item caps-roman">
+                    <strong class="statistics__text statistics__text--orange">100+</strong>
+                    <span class="statistics__text">Complete Projects</span>
+                </div>
+                <div class="statistics__item caps-roman">
+                    <strong class="statistics__text statistics__text--orange">80</strong>
+                    <span class="statistics__text">Team Members</span>
+                </div>
+                <div class="statistics__item caps-roman">
+                    <strong class="statistics__text statistics__text--orange">5,220,000</strong>
+                    <span class="statistics__text">Line of code written</span>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
     <section class="section" id="services">
         <div class="services">
@@ -351,6 +317,10 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/three@0.121.1/examples/js/controls/OrbitControls.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script> -->
+    <script src="./js/animation.js"></script>
     <script src="./js/function.js"></script>
     <script>
         function fetcFun(){

@@ -7,21 +7,39 @@ html {
     overflow-x: hidden;
 }
 
-body {
-    padding-top: 112px;
-    overflow-x: hidden;
-}
-
-.loading {
-    filter: blur(8px);
-}
-
 // $orange: #ff7062;
 $orange: #7c00f0;
 $silver: #757575;
 $dark: #2a2a2a;
 
 $animation: .2s;
+
+body {
+    padding-top: 112px;
+    overflow-x: hidden;
+}
+
+.black {
+    transition: .5s;
+    background-color: #000 !important;
+
+    * {
+        color: #fff !important;
+    }
+}
+
+.white {
+    transition: .5s;
+    background-color: #fff !important;
+}
+
+.loading {
+    filter: blur(8px);
+}
+
+.animation {
+    background-color: transparent;
+}
 
 @font-face {
     font-family: 'helvetica-caps-roman';

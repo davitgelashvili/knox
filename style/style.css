@@ -14,9 +14,29 @@ body {
   overflow-x: hidden;
 }
 
+.black {
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: #000 !important;
+}
+
+.black * {
+  color: #fff !important;
+}
+
+.white {
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: #fff !important;
+}
+
 .loading {
   -webkit-filter: blur(8px);
           filter: blur(8px);
+}
+
+.animation {
+  background-color: transparent;
 }
 
 @font-face {
@@ -161,6 +181,7 @@ body {
 .logo {
   width: 100%;
   max-width: 88px;
+  background-color: #fff;
 }
 
 .logo__img {
@@ -218,18 +239,18 @@ body {
 
 .slider {
   width: 100%;
-  height: calc(100vh - 380px);
+  height: calc(100vh - 120px);
   position: relative;
-  background-color: #fff;
+  background-color: #000;
 }
 
 .slider__title {
-  color: #7c00f0;
   font-size: 2.5rem;
 }
 
 .slider__title p {
   width: 0px;
+  color: #7c00f0 !important;
   -webkit-transition: 1.2s;
   transition: 1.2s;
   white-space: nowrap;
@@ -255,29 +276,18 @@ body {
 
 .slider__cover {
   width: 100%;
-}
-
-.slider__cover--img {
-  width: 100%;
-}
-
-@media (max-width: 991px) {
-  .slider__cover--img {
-    width: 46%;
-    margin: 10px auto;
-  }
+  height: 100%;
 }
 
 .statistics {
   width: 100%;
   max-width: 837px;
-  position: absolute;
   bottom: 0;
   padding: 50px;
   border-radius: 12px;
   -webkit-box-shadow: 0px 0px 23px -12px #2a2a2a;
           box-shadow: 0px 0px 23px -12px #2a2a2a;
-  background-color: #fff;
+  background-color: #2a2a2a;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -293,13 +303,31 @@ body {
 }
 
 .statistics__text--orange {
-  color: #7c00f0;
+  color: #7c00f0 !important;
 }
 
 @media (max-width: 991px) {
   .statistics {
     position: relative;
   }
+}
+
+.animation {
+  width: 100%;
+  max-width: 500px;
+}
+
+.animation canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.animation canvas :focus-visible,
+.animation canvas :focus-within,
+.animation canvas :focus,
+.animation canvas :active,
+.animation canvas :visited {
+  outline: none;
 }
 
 .services:hover .services__cover {

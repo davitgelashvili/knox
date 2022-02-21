@@ -1,8 +1,23 @@
+// if ($(document).innerWidth() > 992) {
+//     $('body > section, header, footer, statistics').addClass("black");
+// }
+$('body > section, header, footer, statistics').addClass("black");
 $(document).ready(function(){
     setTimeout(() => { $('body').removeClass("loading") }, 300);
 
     setTimeout(() => {$('.slider__title--first').addClass('active')}, 500);
     setTimeout(() => {$('.slider__title--second').addClass('active')}, 900);
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > $('.slider__cover').height()) {
+            $('body > *').removeClass("black");
+            $('body > section, header, footer, .statistics').addClass("white");
+        } else {
+            $('body > section, header, footer, .statistics').removeClass("white");
+            $('body > *').addClass("black");
+        }
+    });
+    
     // head scroll
     $(window).scroll(function() {
         if ($(this).scrollTop() > 10) {
