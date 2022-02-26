@@ -1,21 +1,24 @@
 $sliderHeight: 400px;
 
 .projects {
-    &__slider {
+    background-color: #fff;
+
+    &__slider-out {
         width: 100%;
         height: $sliderHeight;
 
         @media (max-width: 991px) {
-            height: 200px;
+            height: 240px;
             margin-top: -200px;
-            background: #2a2a2aa9;
+            background: #ffffffd4;
         }
-
-
+    }
+    
+    &__slider {
+    
         &--list {
             width: 100%;
             height: 400px;
-            padding: 0 35px;
             overflow: hidden;
         }
 
@@ -33,7 +36,7 @@ $sliderHeight: 400px;
             padding: 100px 50px 50px 100px;
 
             @media (max-width: 991px) {
-                padding: 25px 0px 0px 25px;
+                padding: 25px;
             }
         }
 
@@ -41,31 +44,68 @@ $sliderHeight: 400px;
             font-size: 1.125rem;
             
             a {
-                color: #2a2a2a;
+                color: $dark;
                 transition: $animation;
                 text-decoration: none;
 
+                svg {
+                    width: 20px;
+                    margin-left: 10px;
+                }
+
                 @media (max-width: 991px) {
-                    color: #fff;
+                    // color: #fff;
                 }
 
                 &:hover {
                     color: $orange;
+
+                    svg {
+                        fill: $orange;
+                    }
                 }
             }
         }
 
         &--desc {
+            max-width: 400px;
+            width: 100%;
             margin-top: 7px;
-            color: #757575;
+            color: $dark;
             font-size: 1rem;
 
             @media (max-width: 991px) {
-                color: #fff;
+                // color: #fff;
             }
 
             p {
                 margin: 8px 0;
+            }
+        }
+
+        &--navs{
+            // border: 1px solid $silver;
+            
+            button {
+                padding: 15px 20px;
+                background-color: transparent;
+                border: none;
+                border: 1px solid $silver;
+                outline: none;
+                cursor: pointer;
+
+                svg {
+                    width: 10px;
+                    fill: $dark;
+                }
+            }
+
+            .owl-next {
+                background-color: $orange;
+
+                svg {
+                    fill: #fff;
+                }
             }
         }
     }

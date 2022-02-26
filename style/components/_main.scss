@@ -17,6 +17,7 @@ $animation: .2s;
 body {
     padding-top: 112px;
     overflow-x: hidden;
+    background-color: #fff;
 }
 
 .black {
@@ -34,7 +35,11 @@ body {
 }
 
 .loading {
+    width: 100%;
+    height: 100%;
+    position: absolute;
     filter: blur(8px);
+    overflow: hidden;
 }
 
 .animation {
